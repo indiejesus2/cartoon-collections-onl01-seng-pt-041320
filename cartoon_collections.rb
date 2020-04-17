@@ -21,7 +21,7 @@ end
 
 def find_the_cheese(queso)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  queso.each {|fresco| fresco if cheese_types.include?(fresco)}
+  queso.map {|fresco| fresco if cheese_types.include?(fresco)}
 end
 #
 # find_the_cheese(["bread", "gouda", "apple"])
