@@ -18,5 +18,7 @@ def find_the_cheese(queso)
     i+=1
     end
 end
+
+queso.collect {|fresco| fresco if cheese_types.include?(fresco)}
 #
 # find_the_cheese(["bread", "gouda", "apple"])
